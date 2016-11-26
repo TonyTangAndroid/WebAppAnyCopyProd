@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="AnyCopy enables you accessing your notes anytime anywhere">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AnyCopy+</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css styles/combined.css -->
+  <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="/styles/main.css">
+  <!-- endbuild -->
+</head>
+
+<body>
+<!-- Root element for React JS -->
+<div id="root"></div>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function (b, o, i, l, e, r) {
+    b.GoogleAnalyticsObject = l;
+    b[l] || (b[l] =
+      function () {
+        (b[l].q = b[l].q || []).push(arguments)
+      });
+    b[l].l = +new Date;
+    e = o.createElement(i);
+    r = o.getElementsByTagName(i)[0];
+    e.src = 'https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e, r)
+  }(window, document, 'script', 'ga'));
+  ga('create', 'UA-XXXXX-X');
+  ga('send', 'pageview');
+</script>
+
+<!-- Modernizr which couldn't been easily loaded by webpack  -->
+<!-- Use gulp useref instead -->
+<!-- build:js scripts/vendor.js -->
+<script type="text/javascript" src="/bower_components/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+<!-- Dist bundle js path -->
+<script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+
+<!-- PLEASE DON'T DELETE THIS, THIS IS USED FOR DEVELOPMENT AND WILL NOT AFFECT PRODUCTION -->
+<!-- Webpack bundle used for Dev-->
+<script type="text/javascript" src="http://localhost:8080/dist/bundle.js" charset="utf-8"></script>
+<!-- End Bundle -->
+</body>
+</html>

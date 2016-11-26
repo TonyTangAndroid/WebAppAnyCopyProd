@@ -1,0 +1,169 @@
+$icon-font-path: '../fonts/';
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    padding-bottom: 5px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-bar {
+    height: 100vh;
+    padding-top: 8px;
+    padding-left: 12px;
+    background-color: #f8f8f8;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.logo {
+    font-size: large;
+}
+
+.section-bottom {
+    position: absolute;
+    bottom: 20px;
+    // a hack on width
+    width: 88%;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    height: 100vh;
+    padding: 0px
+}
+
+.line {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 12px 0 12px 0;
+}
+
+li.active > a {
+    background-color: #adadad!important;
+}
+
+.search {
+    position: fixed;
+    background-color: white;
+    height: 47px;
+    padding: 12px 0 0 8px;
+    margin: 0px;
+}
+
+#searchBar {
+    width: calc(100% - 64px);
+}
+
+#searchButton {
+    margin-left: 4px;
+}
+
+.btn-newCopy {
+    width: 100%;
+    text-align: left;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+// speed copy
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.errors {
+  color: red;
+}
+
+.CopyList {
+    overflow: scroll;
+    height: 100vh;
+}
+
+.copyList {
+    padding-top: 52px;
+}
+
+.cell {
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem ;
+  box-shadow:0 1px 2px #aaa;
+  background:white;
+  margin:0 1rem 1rem;
+  border-radius:3px;
+}
+
+.heightVH100 {
+    height: 100vh;
+}
+
+#CopyEditContent {
+    position: absolute;
+    bottom: 16px;
+    top: 235px;
+    width: 97%;
+}
+
+.action {
+    margin: 8px 0 0 0;
+}
+
+.btn-action {
+    margin: 4px;
+}
+
+#deleteButton {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+#googlePlayImage {
+    height: 28px;
+    float: right;
+}
