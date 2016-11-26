@@ -5,8 +5,8 @@ module.exports = {
     debug: true,
     entry: "./app/scripts/index.js",
     output: {
-      path: path.join(__dirname, "dist"),
-      publicPath: "dist/",
+      path: path.join(__dirname, "docs"),
+      publicPath: "docs/",
       filename: "bundle.js",
     },
     module: {

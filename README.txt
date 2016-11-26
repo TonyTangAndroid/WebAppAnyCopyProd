@@ -55,10 +55,10 @@ git commit -m "update"
 git push
 ```
 
-Lastly push dist folder to gh-pages branch to link up production
+Lastly push docs folder to gh-pages branch to link up production
 
 ```
-git subtree push --prefix dist origin gh-pages
+git subtree push --prefix docs origin gh-pages
 ```
 
 # Optional Deploy Optimization
@@ -68,10 +68,10 @@ This is optional and will not affect production functionality
 remove
 
 ```
-<script type=text/javascript src=http://localhost:8080/dist/bundle.js charset=utf-8></script>
+<script type=text/javascript src=http://localhost:8080/docs/bundle.js charset=utf-8></script>
 ```
 
-from `dist/index.html` after build (DON'T TOUCH `app/index.html`)
+from `docs/index.html` after build (DON'T TOUCH `app/index.html`)
 
 
 # Issue with git subtree
@@ -79,7 +79,7 @@ from `dist/index.html` after build (DON'T TOUCH `app/index.html`)
 when rejected, use
 
 ```
-git push origin `git subtree split --prefix dist master`:gh-pages --force
+git push origin `git subtree split --prefix docs master`:gh-pages --force
 ```
 
 to force update, due to git is not using fast forward on subtree command by default
