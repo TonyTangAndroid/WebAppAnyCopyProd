@@ -22,6 +22,26 @@ https://github.com/MonirAbuHilal/ParseReact/commit/541c46e5c974aa3832654f5540f6b
 
 in ../anycopy-frontend/node_modules/parse-react/lib/browser/ParsePatches.js
 
+replace
+
+  logOut: function logOut() {
+    var promise = oldLogOut();
+    LocalSubscriptions.currentUser.update();
+    return promise;
+  }
+
+
+to
+
+
+  logOut: function logOut() {
+     return oldLogOut().then(function() {
+     LocalSubscriptions.currentUser.update();
+     });
+  }
+
+
+
 6，replace parse server from https://api.parse.com/1 to https://parse.anycopy.io/prod in bundle.js
 
 
